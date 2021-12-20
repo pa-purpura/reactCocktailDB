@@ -1,0 +1,40 @@
+  .parallax {
+    /* The image used */
+    background-image: url("../img/cover.png");
+    /* Set a specific height */
+    /* height: 525px; */
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .caption {
+    width: auto;
+    height: 100%;
+    background:  rgba(255, 255,255, 0.3);
+  }
+  /* .caption i{
+    margin: 60px auto;
+    color: white;
+  } */
+  .caption img{
+    margin: 20px auto;
+    height: 50%;
+    text-align: center;
+  
+  }
+  .caption span{
+    margin: 5px auto;
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+  }
+
+  .flex_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
