@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import '../assets/styles/home.css';
 import logo from '../assets/img/logo.jpeg'
+import Main from './Main';
 
 function Home() {
     return (
@@ -20,14 +21,17 @@ function Home() {
             </div>
             {/* End Logo section  */}
             <div>
-                <ul>
-                    <li>
-                        <Link to="/search_by_name"><button className="btn btn-outline-secondary btn-sm m-1">search_by_name</button></Link>
-                    </li>
-                    <li>
-                        <Link to="/search_by_letter"><button className="btn btn-outline-secondary btn-sm m-1">search_by_letter</button></Link>
-                    </li>
-                </ul>
+                <div className="container">
+                    <Main />
+                    {/* <ul>
+                        <li>
+                            <Link to="/search_by_name"><button className="btn btn-outline-secondary btn-sm m-1">search_by_name</button></Link>
+                        </li>
+                        <li>
+                            <Link to="/search_by_letter"><button className="btn btn-outline-secondary btn-sm m-1">search_by_letter</button></Link>
+                        </li>
+                    </ul>  */}
+                </div>
             </div>
         </>
     )
