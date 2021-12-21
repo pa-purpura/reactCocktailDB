@@ -23,14 +23,6 @@ function Home() {
             <div>
                 <div className="container">
                     <Main />
-                    {/* <ul>
-                        <li>
-                            <Link to="/search_by_name"><button className="btn btn-outline-secondary btn-sm m-1">search_by_name</button></Link>
-                        </li>
-                        <li>
-                            <Link to="/search_by_letter"><button className="btn btn-outline-secondary btn-sm m-1">search_by_letter</button></Link>
-                        </li>
-                    </ul>  */}
                 </div>
             </div>
         </>

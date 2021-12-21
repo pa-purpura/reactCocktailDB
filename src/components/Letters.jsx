@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { SearchContext } from '../context/Search';
 import useSearch from '../hooks/useSearch';
+import '../assets/styles/colors.css';
 
 
 function Letters() {
@@ -13,19 +14,19 @@ function Letters() {
     const thisSearch = useSearch()
 
     const getLetter = (letter) => {
-        choise(letter)
         thisSearch.searchByLetter(letter)
+        choise(letter)
 
     }
 
 
     return (
-        <div className="row mt-5">
-            <div className="col-md-12  d-flex justify-content-center align-items-center">
+        <div className="row " >
+            <div className="col-md-12  d-flex justify-content-center align-items-center bg_white" style={{ height: '14rem' }}>
                 <ul className="d-flex justify-content-center align-items-center" >
                     {letters.map((letter, i) => (
                         // <a  >
-                        <li
+                        <li className="orange"
                             key={i}
                             style={{ marginRight: 30, fontSize: 20 }}
                             onClick={e => getLetter(e.target.textContent)}

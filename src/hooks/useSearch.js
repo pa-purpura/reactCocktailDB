@@ -13,7 +13,8 @@ export default function useSerach() {
         try {
             // console.log('i dati arrivano alla funzione', data)
             const res = await api.searchByLetter(letter)
-            search.setCocktails(res.data)
+            console.log(res.data.drinks)
+            search.setCocktails(res.data.drinks)
         } catch (err) {
             console.warn(err.response)
         } finally {
