@@ -1,7 +1,12 @@
+import Letters from '../components/Letters';
+
+
 function SearchLetter() {
     return (
         <div>
-            <h1>Search by letter</h1>
+            <div className="container">
+                <Letters />
+            </div>
         </div>
     )
 }
