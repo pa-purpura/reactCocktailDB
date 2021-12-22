@@ -27,7 +27,7 @@ export default function useSerach() {
         try {
             // console.log('i dati arrivano alla funzione', data)
             const res = await api.getDrink(id)
-            console.log('cosa arriva', res.data.drinks)
+            // console.log('cosa arriva', res.data.drinks)
             search.setCocktail(res.data.drinks)
         } catch (err) {
             console.warn(err.response)
@@ -36,6 +36,20 @@ export default function useSerach() {
         }
     }
 
-    return { searchByLetter, getDrink }
+    const searchByName = async (name) => {
+        setLoading(true)
+        try {
+            // console.log('i dati arrivano alla funzione', data)
+            const res = await api.searchByName(name)
+            console.log('cosa arriva', res.data.drinks)
+            search.setCocktails(res.data.drinks)
+        } catch (err) {
+            console.warn(err.response)
+        } finally {
+            setLoading(false)
+        }
+    }
+
+    return { searchByLetter, getDrink, searchByName }
 
 }

@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect } from 'react';
+import { useContext } from 'react';
 import { SearchContext } from '../context/Search';
 import Card from "./Card";
 
@@ -7,10 +7,6 @@ function List() {
     const context = useContext(SearchContext)
 
     const drinks = context.cocktails
-
-
-    // console.log("primo list ", drinks)
-
 
     return (
 
