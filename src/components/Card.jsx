@@ -1,6 +1,7 @@
 // import { useContext } from 'react';
 // import { SearchContext } from '../context/Search';
 import '../assets/styles/colors.css';
+import { Link } from 'react-router-dom'
 
 function Card({ data, id }) {
 
@@ -14,7 +15,8 @@ function Card({ data, id }) {
                 <div className="card-body bg_white">
                     <h5 className="card-title">{data.strDrink}</h5>
                     <p className="card-text">{data.strCategory}</p>
-                    <a href="#" className="btn bg_yellow white">Details</a>
+                    {/* <a href="#" className="btn bg_yellow white">Details</a> */}
+                    <Link to={`/cocktail/${id}`}><a className="btn bg_yellow white">Details </a></Link>
                 </div>
             </>
         </div>

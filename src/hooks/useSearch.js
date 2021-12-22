@@ -22,6 +22,20 @@ export default function useSerach() {
         }
     }
 
-    return { searchByLetter }
+    const getDrink = async (id) => {
+        setLoading(true)
+        try {
+            // console.log('i dati arrivano alla funzione', data)
+            const res = await api.getDrink(id)
+            console.log('cosa arriva', res.data.drinks)
+            search.setCocktail(res.data.drinks)
+        } catch (err) {
+            console.warn(err.response)
+        } finally {
+            setLoading(false)
+        }
+    }
+
+    return { searchByLetter, getDrink }
 
 }

@@ -9,7 +9,7 @@ function List() {
     const drinks = context.cocktails
 
 
-    console.log("primo list ", drinks)
+    // console.log("primo list ", drinks)
 
 
     return (
