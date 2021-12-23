@@ -1,9 +1,10 @@
 import { useEffect } from "react"
 import { useParams } from "react-router-dom"
 import useSearch from '../hooks/useSearch';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { SearchContext } from '../context/Search';
 import '../assets/styles/colors.css';
+import Details from "../components/Details";
 
 function Cocktail() {
 
@@ -11,9 +12,9 @@ function Cocktail() {
     const search = useSearch()
     const context = useContext(SearchContext)
     const drink = context.cocktail
-    console.log(drink.strDrink)
+    // console.log(drink.strDrink)
 
-    console.log('pronto ad essere renderizzato', drink)
+    // console.log('pronto ad essere renderizzato', drink)
 
     useEffect(() => {
         search.getDrink(id)
@@ -23,7 +24,11 @@ function Cocktail() {
     return (
         drink.map(el => {
             return (
-                <h4>cocktail details of id:{el.idDrink} and name: {el.strDrink} works!</h4>
+                <div className="container">
+                    <div className="row m-5 ">
+                        <Details props={el} />
+                    </div>
+                </div>
             )
         })
 
@@ -31,3 +36,4 @@ function Cocktail() {
 }
 
 export default Cocktail
+
