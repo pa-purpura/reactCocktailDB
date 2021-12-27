@@ -6,6 +6,11 @@ import SearchName from './pages/SearchName';
 import SearchLetter from './pages/SearchLetter';
 import Cocktail from './pages/Cocktail.jsx';
 import SearchProvider from './context/Search';
+import Footer from './pages/Footer';
+// import { library } from '@fortawesome/fontawesome-svg-core'
+// import { fab } from '@fortawesome/free-brands-svg-icons'
+
+// library.add(fab)
 
 function App() {
   return (
@@ -30,6 +35,7 @@ function App() {
           />
         </Routes>
       </SearchProvider>
+      <Footer />
     </BrowserRouter>
   );
 }

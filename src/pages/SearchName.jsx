@@ -4,15 +4,17 @@ import '../assets/styles/colors.css';
 
 function SearchName() {
     return (
-        <div className="bg_yellow p-5">
-            <div className="container ">
-                <Input />
+        < >
+            <div className="bg_white">
+                <div className="container">
+                    <Input />
+                </div>
             </div>
             <div className="container">
                 <List />
             </div>
+        </>
 
-        </div>
     )
 }
 

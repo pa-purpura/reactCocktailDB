@@ -20,20 +20,23 @@ function Input() {
     }
 
     return (
-        <div className="input-group mb-3">
-            <input
-                type="text"
-                className="form-control"
-                placeholder="Recipient's username"
-                // onChange={e => choise(e.target.value)}
-                onKeyPress={(e) => e.key === 'Enter' && getUserChoise(e.target.value)}
-                value={drinkName}
-            />
-            <button className="btn bg_orange white" onClick={(e) => getUserChoise(e.target.value)} type="button">Search</button>
-        </div>
+        <div className="row " >
+            <div className="col-md-12  d-flex justify-content-center align-items-center " style={{ height: '20vh' }}>
+                <div className="input-group mb-3">
+                    <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Recipient's username"
+                        // onChange={e => choise(e.target.value)}
+                        onKeyPress={(e) => e.key === 'Enter' && getUserChoise(e.target.value)}
+                        value={drinkName}
+                    />
+                    <button className="btn bg_orange white" onClick={(e) => getUserChoise(e.target.value)} type="button">Search</button>
+                </div>
+            </div>
+        </div >
     )
 }
 
 export default Input
 
-// aria-label="Recipient's username" aria-describedby="button-addon2" onClick={getUserChoise} 

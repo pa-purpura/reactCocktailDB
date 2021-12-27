@@ -4,15 +4,16 @@ import List from '../components/List';
 
 function SearchLetter() {
     return (
-        <div>
-            <div className="container-fluid">
-                <Letters />
+        <>
+            <div className="bg_white">
+                <div className="container">
+                    <Letters />
+                </div>
             </div>
             <div className="container">
                 <List />
             </div>
-
-        </div>
+        </>
     )
 }
 

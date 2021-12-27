@@ -22,7 +22,7 @@ function Letters() {
 
     return (
         <div className="row " >
-            <div className="col-md-12  d-flex justify-content-center align-items-center bg_white" style={{ height: '14rem' }}>
+            <div className="col-md-12  d-flex justify-content-center align-items-center" style={{ height: '20vh' }}>
                 <ul className="d-flex justify-content-center align-items-center" >
                     {letters.map((letter, i) => (
                         // <a  >

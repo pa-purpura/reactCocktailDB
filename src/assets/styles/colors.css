@@ -23,3 +23,14 @@
 .orange{
     color: #ee6c00;
 }
+
+.react-icons {
+    vertical-align: middle;
+    color: #fff5e7;
+    font-size: 2em;
+    margin: 1px;
+  }
+
+  .react-icons:hover {
+    color: #ee6c00;
+  }

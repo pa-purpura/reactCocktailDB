@@ -10,7 +10,7 @@ function List() {
 
     return (
 
-        < div className='row mt-5' >
+        < div className='row m-5' style={{ minHeight: '58vh' }}>
             <div className="col-md-12 d-flex flex-wrap   justify-content-center">
                 {
                     (drinks == undefined)
