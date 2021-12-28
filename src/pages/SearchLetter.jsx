@@ -1,5 +1,6 @@
 import Letters from '../components/Letters';
 import List from '../components/List';
+import Buttons from "../components/Buttons";
 
 
 function SearchLetter() {
@@ -12,6 +13,9 @@ function SearchLetter() {
             </div>
             <div className="container">
                 <List />
+            </div>
+            <div className="container">
+                <Buttons />
             </div>
         </>
     )

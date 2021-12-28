@@ -4,7 +4,7 @@ import '../assets/styles/colors.css';
 
 function Main() {
     return (
-        <div className="row mt-5 ">
+        <div className="row m-5 ">
             <div className="col-sm-6 d-flex justify-content-center">
                 <div className="card text-center m-1" style={{ width: '22rem' }}>
                     <div className="card-body bg_white">

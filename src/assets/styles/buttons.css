@@ -1,0 +1,28 @@
+
+
+.buttons-icons {
+    border-radius: 100%;
+    color: #ffb771;
+    background-color: #fff5e7;
+    border: 1px solid  #ee6c00;
+    font-size: 2em;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.buttons-icons:hover {
+    color: #fff5e7;
+    background-color: #ee6c00;
+    border: 1px solid  #ffb771;
+
+}
+
+.button-container{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  6px;
+}

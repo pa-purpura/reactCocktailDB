@@ -1,23 +1,20 @@
 import '../assets/styles/colors.css';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { fab } from '@fortawesome/free-brands-svg-icons'
+import '../assets/styles/footer.css';
 import { FaInstagramSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 
 function Footer() {
     return (
-        <nav className="bg-dark text-white text-center  " style={{ height: '12vh' }}>
+        <nav className="bg_dark text-white text-center  " style={{ height: '12vh' }}>
 
-            <div className="col-md-12 d-flex justify-content-center bg_yellow">
-                <a href="https://www.linkedin.com/in/paolo-purpura-90629249/" target="_blank" className="react-icons">
+            <div className="col-md-12 d-flex justify-content-center ">
+                <a href="https://www.linkedin.com/in/paolo-purpura-90629249/" target="_blank" rel="noreferrer" className="footer-icons">
                     <FaLinkedin />
                 </a>
-                <a href="https://github.com/pa-purpura" target="_blank" className="react-icons">
+                <a href="https://github.com/pa-purpura" target="_blank" rel="noreferrer" className="footer-icons">
                     <FaGithubSquare />
                 </a>
-                <a href="https://www.instagram.com/paolo.purpura/" target="_blank" className="react-icons">
+                <a href="https://www.instagram.com/paolo.purpura/" target="_blank" rel="noreferrer" className="footer-icons">
                     <FaInstagramSquare />
                 </a>
             </div>

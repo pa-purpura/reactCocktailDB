@@ -1,5 +1,7 @@
 import Input from '../components/Input';
 import List from '../components/List';
+import Buttons from "../components/Buttons";
+
 import '../assets/styles/colors.css';
 
 function SearchName() {
@@ -12,6 +14,9 @@ function SearchName() {
             </div>
             <div className="container">
                 <List />
+            </div>
+            <div className="container">
+                <Buttons />
             </div>
         </>
 

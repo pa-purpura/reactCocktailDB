@@ -5,6 +5,7 @@ import { useContext } from 'react';
 import { SearchContext } from '../context/Search';
 import '../assets/styles/colors.css';
 import Details from "../components/Details";
+import Buttons from "../components/Buttons";
 
 function Cocktail() {
 
@@ -25,9 +26,10 @@ function Cocktail() {
         drink.map(el => {
             return (
                 <div className="container">
-                    <div className="row m-5 ">
+                    <div className="row m-2 ">
                         <Details props={el} />
                     </div>
+                    <Buttons />
                 </div>
             )
         })

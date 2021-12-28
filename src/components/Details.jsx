@@ -85,8 +85,6 @@ function Details({ props }) {
                         }).call(this)
                     }
                 </div>
-
-
             </div>
         </>
     )
