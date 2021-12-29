@@ -35,20 +35,24 @@ function Details({ props }) {
                         <li className="list-group-item">{props.strAlcoholic}</li>
                     </ul>
                     <div className="card-body">
+                        {props.strInstructions
+                            ? <a style={{ textDecoration: 'none' }} onClick={() => { setLanguage('english') }} className="card-link">🇬🇧</a>
+                            : null
+                        }
                         {props.strInstructionsDE
-                            ? <a onClick={() => { setLanguage('german') }} className="card-link">🇩🇪</a>
+                            ? <a style={{ textDecoration: 'none' }} onClick={() => { setLanguage('german') }} className="card-link">🇩🇪</a>
                             : null
                         }
                         {props.strInstructionsIT
-                            ? <a onClick={() => { setLanguage('italian') }} className="card-link">🇮🇹</a>
+                            ? <a style={{ textDecoration: 'none' }} onClick={() => { setLanguage('italian') }} className="card-link">🇮🇹</a>
                             : null
                         }
                         {props.strInstructionsES
-                            ? <a onClick={() => { setLanguage('espagnol') }} className="card-link">🇪🇸</a>
+                            ? <a style={{ textDecoration: 'none' }} onClick={() => { setLanguage('espagnol') }} className="card-link">🇪🇸</a>
                             : null
                         }
                         {props.strInstructionsFR
-                            ? <a onClick={() => { setLanguage('franch') }} className="card-link">🇫🇷</a>
+                            ? <a style={{ textDecoration: 'none' }} onClick={() => { setLanguage('franch') }} className="card-link">🇫🇷</a>
                             : null
                         }
                     </div>

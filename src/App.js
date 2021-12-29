@@ -7,6 +7,7 @@ import SearchLetter from './pages/SearchLetter';
 import Cocktail from './pages/Cocktail.jsx';
 import SearchProvider from './context/Search';
 import Footer from './pages/Footer';
+import FilterCategories from './pages/FilterCategories';
 // import { library } from '@fortawesome/fontawesome-svg-core'
 // import { fab } from '@fortawesome/free-brands-svg-icons'
 
@@ -28,6 +29,10 @@ function App() {
           <Route
             path="/search_by_letter"
             element={<SearchLetter />}
+          />
+          <Route
+            path="/filter_by_categories"
+            element={<FilterCategories />}
           />
           <Route
             path="/cocktail/:id"

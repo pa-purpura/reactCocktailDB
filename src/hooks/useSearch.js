@@ -41,7 +41,7 @@ export default function useSerach() {
         try {
             // console.log('i dati arrivano alla funzione', data)
             const res = await api.searchByName(name)
-            console.log('cosa arriva', res.data.drinks)
+            // console.log('cosa arriva', res.data.drinks)
             search.setCocktails(res.data.drinks)
         } catch (err) {
             console.warn(err.response)
@@ -50,6 +50,35 @@ export default function useSerach() {
         }
     }
 
-    return { searchByLetter, getDrink, searchByName }
+    const getCategories = async () => {
+        setLoading(true)
+        try {
+            // console.log('i dati arrivano alla funzione', data)
+            const res = await api.getCategories()
+            // console.log('lista categorie', res.data.drinks)
+            search.setCategories(res.data.drinks)
+        } catch (err) {
+            console.warn(err.response)
+        } finally {
+            setLoading(false)
+        }
+    }
+
+    const filterByCategories = async (category) => {
+        setLoading(true)
+        try {
+            // console.log('i dati arrivano alla funzione', data)
+            const res = await api.filterByCategories(category)
+            // console.log('lista categorie', res.data.drinks)
+            search.setCocktails(res.data.drinks)
+        } catch (err) {
+            console.warn(err.response)
+        } finally {
+            setLoading(false)
+        }
+
+    }
+
+    return { searchByLetter, getDrink, searchByName, getCategories, filterByCategories }
 
 }

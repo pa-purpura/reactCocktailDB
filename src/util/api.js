@@ -14,11 +14,15 @@ const api = {
 
     searchByName: (name) => {
         return instance.get(`json/v1/1/search.php?s=${name}`)
+    },
+
+    getCategories: () => {
+        return instance.get(`json/v1/1/list.php?c=list`)
+    },
+
+    filterByCategories: (category) => {
+        return instance.get(`json/v1/1/filter.php?c=${category}`)
     }
 }
 
 export default api
-
-// www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11007
-
-// www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
