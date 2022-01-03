@@ -40,7 +40,7 @@ function App() {
           />
         </Routes>
       </SearchProvider>
-      <Footer />
+      <Footer class="mt-auto" />
     </BrowserRouter>
   );
 }

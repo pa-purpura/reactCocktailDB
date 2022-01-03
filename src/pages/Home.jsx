@@ -25,7 +25,7 @@ function Home() {
                 </div>
             </div>
             {/* End Logo section  */}
-            <div style={{ height: '54vh' }}>
+            <div >
                 <div className="container">
                     <Main />
                 </div>
@@ -35,3 +35,4 @@ function Home() {
 }
 
 export default Home
+
