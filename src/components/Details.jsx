@@ -11,7 +11,7 @@ function Details({ props }) {
 
     for (const key in props) {
         if (!!props[key] && key.includes('strIngredient')) {
-            console.log(`${key}: ${props[key]}`);
+            // console.log(`${key}: ${props[key]}`);
             ingredients.push(props[key])
         }
 

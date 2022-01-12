@@ -1,10 +1,20 @@
 import { Link } from 'react-router-dom';
 import '../assets/styles/colors.css';
-// import { BiDrink } from "react-icons/fa";
+import { SearchContext } from '../context/Search';
+import { useEffect, useContext } from 'react';
+
+
 import { BiDrink } from "react-icons/bi";
 
 
 function Main() {
+
+    const context = useContext(SearchContext)
+
+    useEffect(() => {
+        context.setCocktails([]);
+    }, []);
+
     return (
         <>
             <div className="row  p-4">

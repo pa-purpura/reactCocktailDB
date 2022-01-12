@@ -4,6 +4,7 @@ import { Route } from 'react-router'
 import Home from './pages/Home';
 import SearchName from './pages/SearchName';
 import SearchLetter from './pages/SearchLetter';
+
 import Cocktail from './pages/Cocktail.jsx';
 import SearchProvider from './context/Search';
 import Footer from './pages/Footer';
